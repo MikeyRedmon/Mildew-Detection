@@ -24,7 +24,7 @@ def page_summary_body():
     st.write(
         f"* For additional information on the dataset and data preparation, "
         f"see the [README file]"
-       
+
 
     st.success(
         f"**Business requirements:**\n"
