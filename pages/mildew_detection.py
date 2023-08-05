@@ -10,7 +10,7 @@ from src.ml.predictive_analysis import (
 )
 
 
-def page_powdery_mildew_detection_body():
+def page_mildew_detection_body():
 
     st.info(
         f"Here you can upload images of cherry leaves to identify leaves "
