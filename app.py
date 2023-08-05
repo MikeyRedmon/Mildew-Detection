@@ -1,13 +1,13 @@
 import streamlit as st
-from pages.home import MultiPage
+from app_pages.home import MultiPage
 
 # Load pages scripts
-from pages.summary import page_summary_body
-from pages.visualiser import page_visualiser_body
-from pages.mildew_detection import page_mildew_detection_body
-from pages.hypothesis import page_hypothesis_body
-from pages.prediction import page_prediction
-from pages.instructions import page_instructions_body
+from app_pages.summary import page_summary_body
+from app_pages.visualiser import page_visualiser_body
+from app_pages.mildew_detection import page_mildew_detection_body
+from app_pages.hypothesis import page_hypothesis_body
+from app_pages.prediction import page_prediction
+from app_pages.instructions import page_instructions_body
 
 # Create an instance of the app
 app = MultiPage(app_name="Powdery Mildew Detector")

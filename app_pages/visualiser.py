@@ -10,7 +10,7 @@ import itertools
 import random
 
 
-def page_leaf_visualiser_body():
+def page_visualiser_body():
     st.write("### Cherry Leaf Visualiser")
 
     st.info(

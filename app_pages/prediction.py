@@ -16,7 +16,7 @@ def page_prediction(version='v2'):
              caption='Labels Distribution on Train, Validation and Test Sets')
     st.write(f"From these metrics, we can see that the train, validation and "
              f"test sets are well balanced in terms of class distribution "
-             f"between healthy and powdery_mildew images, as they each have an "
+             f"between healthy and powdery_mildew images, as they each have an"
              f"equal number of images for each class. This is important to "
              f"ensure that the model learns to distinguish between the two "
              f"classes equally well and avoids bias towards one class. ")
@@ -39,7 +39,7 @@ def page_prediction(version='v2'):
         F"the change in model performance over time as the model is trained "
         f"on a dataset. \n\n The model history plot contains two curves: "
         f"one for the training set and one for the validation set. The curve "
-        f"for the training set shows how the model's performance improves over "
+        f"for the training set shows how the model's performance improves over"
         f"time as it is exposed to more training data. The curve for the "
         f"validation set shows how the model's performance improves over time "
         f"as it is evaluated on a set of data that it has not seen during "
@@ -116,7 +116,7 @@ def page_prediction(version='v2'):
     st.write(f"The classification report shows that the model has a high "
              f"precision and recall for both classes. **Precision** is the "
              f"number of true positives divided by the sum of true positives "
-             f"and false positives. **Recall** is the number of true positives "
+             f"and false positives. **Recall** is the number of true positives"
              f"divided by the sum of true positives and false negatives. "
              f"High precision indicates that the model can correctly identify "
              f"true positives with a low rate of false positives. High recall "
