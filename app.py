@@ -1,12 +1,12 @@
 import streamlit as st
-from pages.multipage import MultiPage
+from pages.home import MultiPage
 
 # Load pages scripts
 from pages.page_summary import page_summary_body
 from pages.page_leaf_visualiser import page_visualiser_body
-from pages.page_powdery_mildew_detection import page_mildew_detection_body
+from pages.page_mildew_detection import page_mildew_detection_body
 from pages.page_hypothesis import page_hypothesis_body
-from pages.page_ml_prediction import page_prediction
+from pages.page_prediction import page_prediction
 from pages.page_instructions import page_instructions_body
 
 # Create an instance of the app
