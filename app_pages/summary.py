@@ -24,6 +24,7 @@ def page_summary_body():
     st.write(
         f"* For additional information on the dataset and data preparation, "
         f"see the [README file]"
+        f"(https://github.com/MikeyRedmon/Mildew-Detection)"
     )
 
     st.success(
