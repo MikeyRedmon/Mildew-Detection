@@ -7,12 +7,6 @@ class MultiPage:
         self.pages = []
         self.app_name = app_name
 
-        st.set_page_config(
-            page_title=self.app_name,
-            page_icon=icon)
-
-        set_background(bckgr_img)
-
     def add_page(self, title, func) -> None:
         self.pages.append({"title": title, "function": func})
 

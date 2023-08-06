@@ -2,7 +2,7 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import pandas as pd
 from matplotlib.image import imread
-from src.ml.evaluate_clf import load_test_evaluation
+# from src.ml.evaluate_clf import load_test_evaluation
 
 
 def page_prediction(version='v2'):
