@@ -2,7 +2,6 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import pandas as pd
 from matplotlib.image import imread
-# from src.ml.evaluate_clf import load_test_evaluation
 
 
 def page_prediction(version='v2'):
@@ -67,30 +66,6 @@ def page_prediction(version='v2'):
 
     st.write("### Generalised Performance on Test Set")
 
-    # Loading and displaying test set evaluation metrics (loss and accuracy)
-    evaluation = load_test_evaluation(version)
-    df_evaluation = pd.DataFrame(evaluation, index=['Loss', 'Accuracy'])
-    st.dataframe(df_evaluation)
-
-    st.write(
-        f"The plot shows the evaluation metrics of the trained ML model on "
-        f"the test dataset. The two metrics displayed are loss and accuracy, "
-        f"which are important indicators of the model's performance. The loss "
-        f"value of 0.10 indicates how much the predicted values deviate from "
-        f"the true values on average, with lower values being better. "
-        f"Typically, a loss value of 0.10 is considered a good value for "
-        f"binary classification problems. The accuracy value of 0.99 shows "
-        f"the proportion of correctly classified instances in the test "
-        f"dataset, with higher values being better.\n\n"
-        f"Overall, a low loss value and high accuracy value indicate that the "
-        f"machine learning model is performing well on the test dataset and "
-        f"has learned to generalize well to new, unseen data. This means that "
-        f"the model can be considered robust and reliable, and can be used "
-        f"with confidence to make predictions on new data."
-    )
-
-    st.write("---")
-
     # Displaying the confusion matrix
     confusion_matrix = plt.imread(f"outputs/{version}/confusion_matrix.png")
     st.image(confusion_matrix, caption="Confusion Matrix", width=500)
@@ -100,8 +75,8 @@ def page_prediction(version='v2'):
              f"false negatives (FN). TP and TN indicate correct predictions, "
              f"while FP and FN indicate incorrect predictions. The accuracy "
              f"metric tells us the percentage of correct predictions made by "
-             f"the model - {100*evaluation[1]:.2f}%, while the loss metric - "
-             f"{100*evaluation[0]:.2f}% - measures the deviation between the "
+             f"the model  while the loss metric - "
+             f" measures the deviation between the "
              f"predicted and true labels. A high accuracy and low loss "
              f"indicate that the model is making accurate predictions.")
     st.write("---")

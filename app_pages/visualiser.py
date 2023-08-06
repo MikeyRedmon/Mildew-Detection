@@ -37,7 +37,7 @@ def page_visualiser_body():
         f"efficiently from the image data."
     )
 
-    version = 'v1'
+    version = 'v1.0'
     if st.checkbox("Difference between average and variability image"):
 
         avg_bad_quality = plt.imread(
@@ -87,7 +87,7 @@ def page_visualiser_body():
             f"provides valuable information for future model improvements."
         )
         st.write("* To refresh the montage, click on 'Create Montage' button")
-        my_data_dir = 'inputs/cherry_leaves_dataset/cherry-leaves'
+        my_data_dir = 'inputs/cherry_leaves/cherry-leaves'
         labels = os.listdir(my_data_dir + '/validation')
         label_to_display = st.selectbox(label="Select label", options=labels,
                                         index=0)
