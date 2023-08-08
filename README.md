@@ -2,7 +2,7 @@
 
 ![The splashscreen for the mildew detection application](./splashscreen.png)
 
-Please find a link to the live application ![here](https://p5-mildew-dectection-3edca557477c.herokuapp.com)
+Please find a link to the live application [here](https://p5-mildew-dectection-3edca557477c.herokuapp.com)
 
 ## Table of Contents
 
