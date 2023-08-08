@@ -2,9 +2,20 @@
 
 ![The splashscreen for the mildew detection application](./splashscreen.png)
 
-Please find a link to the live application ![here](https://p5-mildew-dectection-3edca557477c.herokuapp.com/)
+Please find a link to the live application ![here](https://p5-mildew-dectection-3edca557477c.herokuapp.com)
+
+## Table of Contents
+
+- [1. Planning](#planning-phase)
+- [2. Crisp-DM](#crisp-dm-methodology)
+- [3. Hypothesis](#hypothesis-and-how-to-validate)
+- [4. Dashboard Design](#dashboard-design-streamlit-app-user-interface)
+- [5. Features](#features)
+- [6. Deployment](#deployment)
 
 ## Planning Phase
+
+[Go To Top](#table-of-contents)
 
 ### Business Requirements
 
@@ -22,7 +33,21 @@ To save time in this process, the IT team suggested an ML system that is capable
 - The dataset is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/cherry-leaves). We created then a fictitious user story where predictive analytics can be applied in a real project in the workplace.
 - The dataset contains +4 thousand images taken from client's crop fields. The images show cherry leaves that are healthy and cherry leaves that contain powdery mildew, which is a fungal disease that affects a wide range of plants. The cherry plantation crop is one of their finest products in the portfolio and the company is concerned about supplying the market with a product of compromised quality.
 
+## Crisp-DM Methodology
+
+![A image showing the practice of Crisp-DM](./crisp-dm.png)
+
+The Definition and usage of Crisp-DM is:
+
+- Understand the Business problem, objectis and requirements by defining the problem statment and establishing project goals
+- Indenity and collect data sources to explore its quality, completness and relevance
+- Meticulously prepare the data via cleaning, transformation and feature engineering
+- Exhaustively evalute the model to ensure it meets the projects goals
+- Deploy the Model to production using a meticulously planned process.
+
 ## Hypothesis and how to validate?
+
+[Go To Top](#table-of-contents)
 
 - The tree leaves that have pwdery mildew contains white streaks on them.
   - conventional data analysis will be used to conduct a study to visually differentiate a cherry leaf that is healthy from one that contains powdery mildew.
@@ -56,6 +81,8 @@ The data is labelled image data split into two folders, each representing the im
 The classification dataset included 4208 records (2104 healthy leaves and 2104 infected leaves) was a balanced dataset.
 
 ## Dashboard Design (Streamlit App User Interface)
+
+[Go To Top](#table-of-contents)
 
 ### Page 1: Quick Project Summary
 
@@ -98,6 +125,8 @@ The classification dataset included 4208 records (2104 healthy leaves and 2104 i
 
 ## **Features**
 
+[Go To Top](#table-of-contents)
+
 The application is designed using streamlit library. It is has a sidebar menu with five navigation links.
 
 **Navigation** The dashboard developed is a multipage streamlit application with sidebar navigation checkbox links. The navigation links provides quick access to the five pages listed:
@@ -121,6 +150,8 @@ The application is designed using streamlit library. It is has a sidebar menu wi
   - generalised performance on the test sets
 
 ## Deployment
+
+[Go To Top](#table-of-contents)
 
 Steps I took to setup environment and deploy to Heroku
 
@@ -197,3 +228,5 @@ Steps take to create the app is as follows:
 - [Heroku](https://www.heroku.com/) - Deployment platform for the project
 - [GitPod](https://www.gitpod.io/) - Workspace used for the project
 - [AmIResponsive](http://ami.responsivedesign.is/) - Used to generate responsive image used in README file.
+
+[Go To Top](#table-of-contents)

@@ -35,14 +35,14 @@ def page_hypothesis_body():
         f"An ML system trained on cherry leaf images can accurately "
         f"differentiate between healthy and powdery mildew-infected cherry "
         f"leaves with at least 90% accuracy. Based on the low complexity of "
-        f"the binary classification task, it is reasonable to expect about 90%"
+        f"the binary classification task, it is reasonable to expect about 90% "
         f"accuracy rates."
     )
 
     st.info(
-        f"The hypothesis has been verified by creating a model which has shown"
+        f"The hypothesis has been verified by creating a model which has shown "
         f"excellent performance on the two main evaluation metrics for "
-        f"assessing the business functionality and achievement of the project,"
+        f"assessing the business functionality and achievement of the project, "
         f"namely the overall F1 score 99% and the recall on the powdery "
         f"mildew label 99%."
     )
