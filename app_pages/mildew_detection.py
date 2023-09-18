@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 from PIL import Image
-from src.machine_learning.predictive_analysis import (
+from src.ml.predictive_analysis import (
     make_prediction,
     resize_input_image,
     plot_prediction_probabilities
