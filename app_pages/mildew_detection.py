@@ -2,13 +2,12 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 from PIL import Image
-
-from src.data_management import download_dataframe_as_csv
-from src.ml.predictive_analysis import (
-    load_model_and_predict,
+from src.machine_learning.predictive_analysis import (
+    make_prediction,
     resize_input_image,
-    plot_probabilities
+    plot_prediction_probabilities
 )
+from src.data_management import download_dataframe_as_csv
 
 
 def page_mildew_detection_body():
