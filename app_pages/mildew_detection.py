@@ -3,9 +3,9 @@ import numpy as np
 import pandas as pd
 from PIL import Image
 from src.ml.predictive_analysis import (
-    make_prediction,
+    load_model_and_predict,
     resize_input_image,
-    plot_prediction_probabilities
+    plot_probabilities
 )
 from src.data_management import download_dataframe_as_csv
 
